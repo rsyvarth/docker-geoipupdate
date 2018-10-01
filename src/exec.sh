@@ -9,7 +9,5 @@
     echo "DatabaseDirectory ${GEOIP_DIRECTORY:-"/usr/local/share/maxmind/"}" >> $GEOIP_CONFIG_FILE
 }
 
-cat $GEOIP_CONFIG_FILE
-
 # execute the updates with verbose output
 geoipupdate -f $GEOIP_CONFIG_FILE -v
